@@ -90,7 +90,7 @@ export default function AboutPage() {
                         className="text-xl font-bold"
                         style={{ color: "var(--vintage-burgundy)" }}
                       >
-                        77 kgs
+                        77 kg
                       </p>
                     </div>
                     <div className="text-center">
