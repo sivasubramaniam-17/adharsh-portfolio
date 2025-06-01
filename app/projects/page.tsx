@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation"
 import MediaModal from "@/components/MediaModal"
 import Image from "next/image"
 import { Play, Eye, Calendar, Users } from "lucide-react"
+import Navigation1 from "@/components/navigation1"
 
 export default function ProjectsPage() {
   const [selectedMedia, setSelectedMedia] = useState<any>(null)
@@ -96,7 +97,7 @@ export default function ProjectsPage() {
 
   return (
     <>
-      <Navigation />
+      <Navigation1 />
       <main className="min-h-screen pt-20">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-amber-900/20 to-orange-900/20">
