@@ -5,6 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import Navigation from "@/components/Navigation"
 import { Mail, Phone, MapPin, Send, Film, Instagram, Youtube } from "lucide-react"
+import Navigation1 from "@/components/navigation1"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -31,7 +32,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <Navigation />
+      <Navigation1 />
       <main className="min-h-screen pt-20">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-br from-amber-900/20 to-orange-900/20">

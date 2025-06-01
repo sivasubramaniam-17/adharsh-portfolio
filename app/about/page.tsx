@@ -21,6 +21,7 @@ import {
   Clapperboard,
   PenTool,
 } from "lucide-react";
+import Navigation1 from "@/components/navigation1";
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -31,7 +32,7 @@ export default function AboutPage() {
 
   return (
     <>
-      <Navigation />
+      <Navigation1 />
       <main
         className={`min-h-screen pt-20 ${
           isVisible ? "vintage-page-enter" : "opacity-0"
@@ -159,7 +160,7 @@ export default function AboutPage() {
               </div>
 
               {/* Right Image */}
-              <div className="relative order-1 lg:order-2">
+              <div className="relative order-2 lg:order-2">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl vintage-border max-w-md mx-auto lg:max-w-lg">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-18%20at%2021.20.30_47fc7da4.jpg-hEKfR2luMQHlwYtAYaXaYkQIctIRjw.jpeg"
