@@ -44,9 +44,9 @@ export default function Navigation() {
             />
             <div className="flex flex-col">
               <span className="font-cinzel vintage-text-2xl font-semibold" style={{ color: scrolled? "var(--vintage-burgundy)" : "white" }}>
-                Adarsh
+                 ADHARSH
               </span>
-              <span className="text-sm font-medium" style={{ color: scrolled? "var(--vintage-burgundy)" : "white" }}>Tamil Cinema</span>
+              <span className="text-sm font-medium" style={{ color: scrolled? "var(--vintage-burgundy)" : "white" }}> Frame the Dream</span>
             </div>
           </Link>
 

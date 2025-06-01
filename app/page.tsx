@@ -58,7 +58,7 @@ export default function HomePage() {
             <div className="relative z-10 text-center vintage-container">
               <div className="vintage-fade-in">
                 <h1 className="font-cinzel vintage-text-7xl font-light text-amber-100 mb-6 vintage-text-shadow tracking-widest">
-                  Adarsh
+                  ADHARSH
                 </h1>
                 <h2 className="vintage-text-3xl text-stone-200 mb-8 font-light tracking-wide vintage-text-shadow">
                   Writer • Director • Actor
