@@ -163,7 +163,7 @@ export default function AboutPage() {
               <div className="relative order-2 lg:order-2">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl vintage-border max-w-md mx-auto lg:max-w-lg">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-18%20at%2021.20.30_47fc7da4.jpg-hEKfR2luMQHlwYtAYaXaYkQIctIRjw.jpeg"
+                    src="image12.jpg"
                     alt="Adharsh Damodharan - Multi-talented Tamil Filmmaker"
                     width={500}
                     height={400}

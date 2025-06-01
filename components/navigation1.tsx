@@ -1,34 +1,37 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { Menu, X, Film } from "lucide-react"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Menu, X, Film } from "lucide-react";
 
 export default function Navigation1() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
+    { href: "/gallery", label: "Gallery" },
     { href: "/contact", label: "Contact" },
-  ]
+  ];
 
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? "vintage-glass shadow-xl border-b border-stone-200" : "bg-white/50 border-b border-stone-200" 
+        scrolled
+          ? "vintage-glass shadow-xl border-b border-stone-200"
+          : "bg-white/50 border-b border-stone-200"
       }`}
     >
       <div className="vintage-container">
@@ -43,10 +46,27 @@ export default function Navigation1() {
               style={{ color: scrolled ? "#fef395" : "gold" }}
             />
             <div className="flex flex-col">
-              <span className="font-cinzel vintage-text-2xl font-semibold" style={{ color: scrolled? "var(--vintage-burgundy)" : "var(--vintage-burgundy)" }}>
-                 ADHARSH
+              <span
+                className="font-cinzel vintage-text-2xl font-semibold"
+                style={{
+                  color: scrolled
+                    ? "var(--vintage-burgundy)"
+                    : "var(--vintage-burgundy)",
+                }}
+              >
+                ADHARSH
               </span>
-              <span className="text-sm font-medium" style={{ color: scrolled? "var(--vintage-burgundy)" : "var(--vintage-burgundy)" }}> Frame the Dream</span>
+              <span
+                className="text-sm font-medium"
+                style={{
+                  color: scrolled
+                    ? "var(--vintage-burgundy)"
+                    : "var(--vintage-burgundy)",
+                }}
+              >
+                {" "}
+                Frame the Dream
+              </span>
             </div>
           </Link>
 
@@ -57,10 +77,15 @@ export default function Navigation1() {
                 key={item.href}
                 href={item.href}
                 className={`vintage-text-lg font-medium transition-all duration-300 relative group ${
-                  pathname === item.href ? "text-stone-800" : "text-stone-700 hover:text-stone-900"
+                  pathname === item.href
+                    ? "text-stone-800"
+                    : "text-stone-700 hover:text-stone-900"
                 }`}
                 style={{
-                  color: pathname === item.href ? "var(--vintage-burgundy)" : undefined,
+                  color:
+                    pathname === item.href
+                      ? "var(--vintage-burgundy)"
+                      : undefined,
                 }}
               >
                 {item.label}
@@ -97,7 +122,10 @@ export default function Navigation1() {
                   pathname === item.href ? "bg-stone-100" : "hover:bg-stone-50"
                 }`}
                 style={{
-                  color: pathname === item.href ? "var(--vintage-burgundy)" : "var(--vintage-text)",
+                  color:
+                    pathname === item.href
+                      ? "var(--vintage-burgundy)"
+                      : "var(--vintage-text)",
                   animationDelay: `${index * 0.1}s`,
                 }}
               >
@@ -108,5 +136,5 @@ export default function Navigation1() {
         )}
       </div>
     </nav>
-  )
+  );
 }
