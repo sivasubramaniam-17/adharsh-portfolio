@@ -55,7 +55,7 @@ export default function LoadingScreen({ onLoadingComplete }: LoadingScreenProps)
           className={`mb-10 transition-all duration-1000 delay-300 ${showContent ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
         >
           <h1 className="font-cinzel vintage-text-5xl text-amber-100 font-light tracking-widest mb-4 vintage-typewriter">
-            Adarsh
+            Adharsh
           </h1>
           <p className="vintage-text-xl text-stone-300 font-light tracking-wide">Writer • Director • Actor</p>
         </div>
