@@ -17,29 +17,41 @@ export default function HomePage() {
   }
 
   const featuredWorks = [
-    {
+     {
       id: 1,
+      title: "Vindhu",
+      category: "writing",
       type: "video" as const,
       src: "/placeholder.svg?height=400&width=600",
-      title: "Kadhal Kavithai",
-      description: "A compelling narrative exploring human emotions in Tamil culture",
-      category: "Direction",
-    },
-    {
-      id: 2,
-      type: "image" as const,
-      src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-18%20at%2021.20.30_47fc7da4.jpg-hEKfR2luMQHlwYtAYaXaYkQIctIRjw.jpeg",
-      title: "Character Study",
-      description: "Behind the scenes during character development",
-      category: "Acting",
+      description: "A short film exploring emotional connections between a father and son",
+      year: "2024",
+      role: "Writer & Actor",
+      duration: "15 min",
+      cast: "4 actors",
     },
     {
       id: 3,
+      title: "Maanavan Manathu Vaithal",
+      category: "writing",
       type: "video" as const,
       src: "/placeholder.svg?height=400&width=600",
-      title: "Script Reading",
-      description: "Bringing authentic Tamil stories to life",
-      category: "Writing",
+      description: "Emotional journey of a student's aspirations and challenges",
+      year: "2024",
+      role: "Writer",
+      duration: "7 min",
+      cast: "3 actors",
+    },
+    {
+      id: 4,
+      title: "Kana",
+      category: "acting",
+      type: "video" as const,
+      src: "/placeholder.svg?height=400&width=600",
+      description: "Story of dreams and reality that transcends social boundaries",
+      year: "2023",
+      role: "Actor",
+      duration: "18 min",
+      cast: "5 actors",
     },
   ]
 
@@ -75,8 +87,8 @@ export default function HomePage() {
                   <Link href="/projects" className="vintage-button w-full sm:w-auto">
                     View My Work
                   </Link>
-                  <Link href="/contact" className="vintage-button-outline w-full sm:w-auto text-white">
-                    Let's Collaborate
+                  <Link href="/gallery" className="vintage-button-outline w-full sm:w-auto text-white">
+                    View My Gallery
                   </Link>
                 </div>
               </div>
