@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Navigation from "@/components/Navigation"
 import MediaModal from "@/components/MediaModal"
 import Image from "next/image"
-import { Play, Eye, Calendar, Users } from "lucide-react"
+import { Play, Eye, Calendar, Users, Music } from "lucide-react"
 import Navigation1 from "@/components/navigation1"
 
 export default function ProjectsPage() {
@@ -29,7 +29,20 @@ export default function ProjectsPage() {
       duration: "15 min",
       cast: "4 actors",
     },
- 
+    {
+      id: 2,
+      title: "Kanna Kuzhi Alagi",
+      category: "direction",
+      type: "video" as const,
+      src: "/placeholder.svg?height=400&width=600",
+      description: "Traditional Tamil song album capturing village life and cultural heritage with authentic storytelling",
+      year: "2024",
+      role: "Actor & Director",
+      duration: "Music Album",
+      cast: "Village Theme",
+      status: "In Progress",
+      producer: "JD Production"
+    },
     {
       id: 3,
       title: "Maanavan Manathu Vaithal",
@@ -54,8 +67,6 @@ export default function ProjectsPage() {
       duration: "18 min",
       cast: "5 actors",
     },
-
-
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
@@ -64,7 +75,7 @@ export default function ProjectsPage() {
     { id: "all", label: "All Projects" },
     { id: "writing", label: "Writing" },
     { id: "acting", label: "Acting" },
-
+    { id: "direction", label: "Direction" },
   ]
 
   return (
@@ -134,7 +145,20 @@ export default function ProjectsPage() {
                             className="text-white p-4 rounded-full transition-colors group-hover:scale-110"
                             style={{ backgroundColor: "var(--vintage-burgundy)" }}
                           >
-                            <Play className="h-8 w-8" />
+                            {project.category === "direction" && project.title === "Kanna Kuzhi Alagi" ? (
+                              <Music className="h-8 w-8" />
+                            ) : (
+                              <Play className="h-8 w-8" />
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Status Badge for In Progress Projects */}
+                      {project.status === "In Progress" && (
+                        <div className="absolute top-4 left-4">
+                          <div className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                            {project.status}
                           </div>
                         </div>
                       )}
@@ -177,6 +201,12 @@ export default function ProjectsPage() {
                           </div>
                           <span>{project.cast}</span>
                         </div>
+                        {project.producer && (
+                          <div className="flex items-center gap-2">
+                            <span className="font-semibold">Producer:</span>
+                            <span>{project.producer}</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

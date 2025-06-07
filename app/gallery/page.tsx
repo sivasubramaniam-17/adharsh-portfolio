@@ -49,9 +49,9 @@ export default function GalleryPage() {
     {
       id: 1,
       type: "image",
-      src: "image1.jpg",
-      title: "Professional Portrait",
-      description: "Character depth and versatility showcase",
+      src: "image13.jpg",
+      title: "Photoshoot Session",
+      description: "Outdoor photoshoot",
     },
     {
       id: 2,
@@ -124,21 +124,24 @@ export default function GalleryPage() {
       title: "Montage song reel",
       description: "montage song reel showcasing various scenes",
     },
+
     {
       id: 11,
-      type: "image",
-      src: "image9.jpg",
-      title: "Costume Fitting",
-      description: "Character transformation process",
-    },
-    {
-      id: 12,
       type: "image",
       src: "image11.jpg",
   
       title: "Improvisation Reel",
       description: "Spontaneous acting moments",
     },
+    {
+      id: 12,
+      type: "image",
+      src: "image1.jpg",
+   
+      title: "professional portrait",
+      description: "professional portrait showcasing cinematic lighting",
+    },
+
   ];
 
   const openViewer = (item: any, index: number) => {
