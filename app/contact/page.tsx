@@ -22,7 +22,7 @@ export default function ContactPage() {
   useEffect(() => {
     setIsVisible(true)
     // Initialize EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY") // Replace with your EmailJS public key
+    emailjs.init("Bg3WVB5XzbxFKqH_w") // Replace with your EmailJS public key
   }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -38,12 +38,12 @@ export default function ContactPage() {
         phone: formData.phone,
         project_type: formData.projectType,
         message: formData.message,
-        to_email: "dsadharsh12@gmail.com",
+        to_email: "actoradharsh@gmail.com",
       }
 
       await emailjs.send(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_tkqy26s", // Replace with your EmailJS service ID
+        "template_2y1ztip", // Replace with your EmailJS template ID
         templateParams,
       )
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
                       <h3 className="font-medium" style={{ color: "var(--vintage-burgundy)" }}>
                         Email
                       </h3>
-                      <p className="text-stone-700">dsadharsh12@gmail.com</p>
+                      <p className="text-stone-700">actoradharsh@gmail.com</p>
                     </div>
                   </div>
 
@@ -353,7 +353,7 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <a
-                href="mailto:dsadharsh12@gmail.com"
+                href="mailto:actoradharsh@gmail.com"
                 className="bg-white text-stone-800 hover:bg-stone-100 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 hover:scale-105"
               >
                 Email Me Directly

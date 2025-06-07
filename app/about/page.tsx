@@ -268,6 +268,8 @@ export default function AboutPage() {
                 </div>
               </div>
 
+              
+
               {/* Direction */}
               <div className="vintage-card vintage-elegant-hover p-6 md:col-span-2 lg:col-span-1">
                 <div className="flex justify-center mb-6">
@@ -442,6 +444,83 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
+              {/* Music Video Direction Experience */}
+              <div
+                className="vintage-card vintage-elegant-hover p-6 lg:p-8"
+                style={{ borderLeft: `6px solid var(--vintage-burgundy)` }}
+              >
+                <div className="flex flex-col lg:flex-row lg:items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <div
+                      className="p-4 rounded-full w-16 h-16 flex items-center justify-center shadow-lg"
+                      style={{ backgroundColor: "var(--vintage-burgundy)" }}
+                    >
+                      <Play className="h-8 w-8 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-grow">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                      <h3
+                        className="font-cinzel text-xl lg:text-2xl font-bold"
+                        style={{ color: "var(--vintage-burgundy)" }}
+                      >
+                        Music Video Direction
+                      </h3>
+                      <span className="text-sm text-stone-500 mt-2 sm:mt-0">
+                        2024 - Present
+                      </span>
+                    </div>
+                    <h4 className="text-lg font-semibold text-stone-700 mb-3">
+                      Actor & Director - Traditional Tamil Music Albums
+                    </h4>
+                    <p className="text-stone-600 text-base leading-relaxed mb-4">
+                      Currently working on "Kanna Kuzhi Alagi," a traditional Tamil song album 
+                      that captures the essence of village life and cultural heritage. This project 
+                      showcases my dual role as both actor and director, bringing authentic rural 
+                      storytelling to life through music and visuals. The album focuses on a 
+                      traditional village girl's story, emphasizing cultural values and Tamil 
+                      folk traditions with contemporary cinematic techniques.
+                    </p>
+                    <div className="p-4 bg-stone-50 rounded-lg mb-4">
+                      <h6 className="font-semibold text-stone-700 mb-2">Kanna Kuzhi Alagi</h6>
+                      <p className="text-sm text-stone-600 mb-2">Produced by JD Production</p>
+                      <p className="text-xs text-stone-500 mb-2">
+                        <strong>Status:</strong> Shooting in Progress
+                      </p>
+                      <p className="text-xs text-stone-500">
+                        A traditional song album featuring village backdrop storytelling, 
+                        where I serve as both lead actor and director, bringing authentic 
+                        Tamil cultural narratives to modern audiences.
+                      </p>
+                    </div>
+                    <div className="mb-4">
+                      <h5 className="font-semibold text-stone-700 mb-2">Project Highlights:</h5>
+                      <ul className="text-stone-600 text-sm space-y-1">
+                        <li>• Dual role as Actor and Director for creative control</li>
+                        <li>• Traditional Tamil village storytelling with cultural authenticity</li>
+                        <li>• Collaboration with JD Production for professional music video production</li>
+                        <li>• Focus on preserving Tamil folk traditions in modern format</li>
+                      </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-medium text-stone-600">
+                        Kanna Kuzhi Alagi - JD Production
+                      </span>
+                      <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-medium text-stone-600">
+                        Traditional Tamil Music
+                      </span>
+                      <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-medium text-stone-600">
+                        Village Backdrop
+                      </span>
+                      <span className="px-3 py-1 bg-stone-100 rounded-full text-xs font-medium text-stone-600">
+                        Actor-Director
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
 
               {/* Production Experience */}
               <div
